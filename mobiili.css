@@ -126,47 +126,13 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 		background: #000;
 	}
 
-/*julmetuille näytöille/yhdistelmille 1930->...
-|---------------------------------------------|
-|---------------------------------------------|
-|---------------------------------------------|
-|---------------------------------------------|
-*/
-@media only screen and (min-width: 1930px) {
-	/*näkyy kaksi kolumnia vierekkäin -TODO
-	isompi nimi
-	läpinäkyvää*/
-
-	body {
-		background: #FF0000;/*punainen*/
-	}
-	div.nimi{
-		font : 8000%/100% verdana;
-		opacity : 0.5;
-		font-weight: bold;
-		font-style:italic;
-		position: fixed;
-		float: right;
-		margin-top:-340px;
-		margin-left:-220px;
-		margin-right:-200000px;
-		display: block;
-	}
-	article {
-		opacity:0.8;
-	}
-	article:hover{
-		opacity:1;
-	}
-}
-
-/*isoille näytöille väliltä 800px-1929px (puolikas fullHD on 960px) 
+/*isoille näytöille väliltä 800px (puolikas fullHD on 960px) 
 |------------------|
 |------------------|
 |------------------|
 |------------------|
 */
-@media only screen and (min-width: 800px) and (max-width: 1929px) {
+@media only screen and (min-width: 800px) {/* and (max-width: 1929px) {*/
 	/*"normaali versio"*/
 	body {
 		background: #1060A0;/*sininen*/
@@ -258,85 +224,3 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 		opacity:1.0;
 	}
 }
-
-/*aivan liian pieni näyttö 0px-200px
-|-|
-*/
-@media only screen and (max-width: 200px){
-	body {
-		background: #FF50FF;/*joku random väri*/
-	}
-	::selection {
-		background: #1060A0;/*sininen*/
-		color: #FFFFFF;
-	}
-	div.nimi{
-		font : 130%/100% verdana;
-		opacity : 0.3;
-		font-weight: bold;
-		font-style:italic;
-		position: fixed;
-		float: right;
-		margin-top:-24px;
-		margin-left:-11px;
-		margin-right:-2000px;
-		display: block;
-	}
-	a.otsake{
-		font : 120%/100% Arial;
-		color: #230423;
-		text-decoration:none;
-		font-weight: bold;
-		opacity:1;
-	}
-	div.ylapalkki{
-		text-align: left;
-		margin-top:20px;
-
-		margin-right: -7px;
-		margin-left: -7px;
-		padding-right: 2px;
-		padding-left: 2px;
-		opacity:1.0;
-	}
-	li {
-		display:list-item;
-	}
-	article {
-		font : 120%/100% Arial;
-		margin-top: -20px;
-		padding-top: 0px;
-		margin-bottom: -20px;
-		padding-bottom: 2px;
-
-		margin-right: -7px;
-		margin-left: -7px;
-		padding-right: 2px;
-		padding-left: 2px;
-	}
-	img.suurennettava{
-		width: 100%;
-	}
-	img.suurennettava:hover{
-		width: 100%;
-	}
-	img.oikealeijuja{
-		width: 100%;
-	}
-	footer {
-		padding-top: 20px;
-		padding-bottom: 2px;
-
-		margin-right: -7px;
-		margin-left: -7px;
-		padding-right: 2px;
-		padding-left: 2px;
-		opacity:1.0;
-	}
-}
-
-/*universaalit*
-	/*kun testausvaihe on valmis niin tämän voi laittaa koskemaan kaikkea...tai sitten ei
-	body {
-		background: #1060A0; normi sininen väri taustalle
-	}*/
