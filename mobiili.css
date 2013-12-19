@@ -28,6 +28,21 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 		margin-right:-2000px;
 		display: block;
 	}
+
+	div.nimi.modi{
+		font : 1000%/100% verdana;
+		opacity : 0.1;
+		color: #757575;
+		font-weight: bold;
+		font-style:italic;
+		position: fixed;
+		float: right;
+		margin-top:-130px;
+		margin-left:-25px;
+		margin-right:-2000px;
+		display: block;
+	}
+
 	/*valikkopalkki ylälaidassa*/
 	div.ylapalkki{
 		text-align: center;
