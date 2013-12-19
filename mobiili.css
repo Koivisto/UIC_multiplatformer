@@ -5,9 +5,19 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 	width: device-width;
 }
 
-/*VITUN BUTTONIT MENKÄÄ NYT SAATAANA VIEREKKÄIN*/
 div.confirmbuttons{
-	
+	width: 100% ;
+	display: block;
+}
+
+button {
+	width: 30px;
+
+}
+
+div.vitunbuttonirajoitin{
+	width: 70px;
+	display: inline-block;
 }
 
 /*normaaliversio, alustus*/
