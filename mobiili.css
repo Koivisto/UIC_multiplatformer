@@ -5,16 +5,10 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 	width: device-width;
 }
 
+/*VITUN BUTTONIT MENKÄÄ NYT SAATAANA VIEREKKÄIN*/
 div.confirmbuttons{
-	width: 44px;
-	display: inline-block;
-	/*display: list-item;*/
+	
 }
-/*
-button.highlightbutton {
-	width: 20px;
-	display: inline;
-}*/
 
 /*normaaliversio, alustus*/
 	div.nimi{
