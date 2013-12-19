@@ -27,32 +27,59 @@
 
 <body>
 	<article>
-		<p>
-			Tässä on lifeloggingin mobiiliversio
-		</p>
+		<!--mitä normaalisti näkyy, päänäkymä, jossa kaikki tapahtumat 24 h-->
+		<div class="mainview">
+			<h1>Päänäkymä</h1>
+			<div class="confirmed">ruokailu täffällä</div>
+			<div class="unconfirmed">Kävitkö kaupassa? buttoneita jne</div>
+			<div class="unconfirmed">Kävitkö lenkillä? 12.15-13.00?</div>
+			<div class="unconfirmed">Kävitkö lenkillä? 12.15-13.00?</div>
+			<div class="yesterday">nukuit 23-00</div>
+			<div class="yesterday">nukuit 23-00</div>
+			<div class="yesterday">nukuit 23-00</div>
+			<div class="yesterday">nukuit 23-00</div>
 
+		</div>
 
-		<div class="confirmed">ruokailu täffällä</div>
-		<div class="unconfirmed">Kävitkö kaupassa? buttoneita jne</div>
-		<div class="unconfirmed">Kävitkö lenkillä? 12.15-13.00?</div>
-		<div class="unconfirmed">Kävitkö lenkillä? 12.15-13.00?</div>
-		<div class="yesterday">nukuit 23-00</div>
-		<div class="yesterday">nukuit 23-00</div>
-		<div class="yesterday">nukuit 23-00</div>
-		<div class="yesterday">nukuit 23-00</div>
+		<!--kaikille mobiilissa kysyttäville asioille yhteinen näkymä-->
+		<div class="questionview">
+			<!--normaalin "joo"-painalluksen tulos proto #1 perusteella-->
+			<!--normaalit kyssärit-->
+			<div class="questions" id="basicquestions">
+				<h1>vastaa kysymyksiin koskien varmistettavaa asiaa</h1>
+				<div class="moodquestion">:D vai :(</div>
+				<div class="textfield">tähän tekstikenttä</div>
+			</div>
 
-		<div class="moodquestion">:D vai :(</div>
-		<div class="textfield">tähän tekstikenttä</div>
-		<div class="namequestion">tähän tekstikenttä, johon syötetään uuden tapahtuman nimi</div>
+			<!-- tarvittaessa lisäkyssäreitä-->
+			<div class="questions" id="extraquestions">
+				<div class="timequestion">valitse aika, joku sivuttainen palkki jota voi vedellä</div>
 
-		<div class="symbolquestion">symbolikyssäri, samaan tapaan kuin moodi</div>
-		<div class="symbolquestion">symbolikyssäri, samaan tapaan kuin moodi</div>
+			</div>
+
+			<!--uuden luodessa-->
+			<div class="questions" id="questionsfornew">
+				<h1>Minkä uuden tapahtuman haluat luoda?</h1>
+				<div class="namequestion">tähän tekstikenttä, johon syötetään uuden tapahtuman nimi</div>
+				<div class="symbolquestion">:D vai :(</div>
+
+			</div>
+
+		</div>
+
+		<!--lista vaihtoehdoista "ei"-painalluksen jälkeen-->
+		<div class="listview">
+			<h1>Lista tapahtumista</h1>
+			<div class="listobject">jalkapalloilu</div>
+			<div class="listobject">kirjan lukeminen</div>
+			<div class="listobject">opiskelu</div>
+			<div class="listobject">kaupparessu</div>
+			<div class="listobject">
+				<div class="createnewbutton">LUO UUSI++</div>
+			</div>
+
+		</div>
+
 	</article>
 </body>
-
-<footer>
-	<p>
-		mobiiliversio
-	</p>
-</footer>
 </html>
