@@ -1,12 +1,3 @@
-/*rakenne (itselleni selitettynä):
-	1. yhteiset (normiversio)
-	2. jokaiselle koolle omat muutoksensa
-		-jättikoko
-		-normikoko
-		-tabletti/kännykkä
-		-aivan mini
-*/
-
 /*ie-ribalekoodia, koska mobiiliselainten (varsinkaan ie) tekijät 
 eivät piittaa standardeista vaan kusettavat selaimen leveydeksi 
 jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
@@ -14,132 +5,50 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 	width: device-width;
 }
 
+div.confirmbuttons{
+	width: 44px;
+	display: inline-block;
+	/*display: list-item;*/
+}
+/*
+button.highlightbutton {
+	width: 20px;
+	display: inline;
+}*/
+
 /*normaaliversio, alustus*/
 	div.nimi{
 		font : 1000%/100% verdana;
-		opacity : 0.1;
-		color: #FFFFFF;
-		font-weight: bold;
-		font-style:italic;
-		position: fixed;
-		float: right;
-		margin-top:-130px;
-		margin-left:-25px;
-		margin-right:-2000px;
-		display: block;
+		color: #F00;
 	}
 
 	div.nimi.modi{
 		font : 1000%/100% verdana;
-		opacity : 0.1;
 		color: #757575;
-		font-weight: bold;
-		font-style:italic;
-		position: fixed;
-		float: right;
-		margin-top:-130px;
-		margin-left:-25px;
-		margin-right:-2000px;
-		display: block;
 	}
 
-	/*valikkopalkki ylälaidassa*/
-	div.ylapalkki{
-		text-align: center;
-		max-width: 1040px ;
-		margin-top:100px;
-		margin-left: auto ;
-		margin-right: auto ;
-		font : 160%/100% Arial;
-		position: relative; /*tuo taustatektin eteen*/
-		padding: 40px;
-		background: #FFFFFF;
-		opacity:0.6;
-		border-top-right-radius:1em;/*pyöristys toiseen kulmaan*/
-		/*border-top-left-radius:1em;*/
-	}
-	div.ylapalkki:hover{
-		opacity:1;
-	}
-	nav.valikko {
-		list-style-type:none;
-	}
-	li {
-		display:inline;
-	}
-	a {
-		color: #FF5010;/*rohkeanpunainen*/
-		text-decoration:none;
-	}
-	a.otsake{
-		font : 260%/100% Arial;
-		color: #230423;
-		text-decoration:none;
-		font-weight: bold;
-		opacity:1;
-	}
-	a.ei{
-		color: #230423;
-	}
-	a.kylla{
-		color: #230423;
-		font-weight: bold;
-	}
 
 	/*sivun sisältöosuus*/
 	article {
+
+		/*
 		max-width: 1040px ;
 		margin-left: auto ;
 		margin-right: auto ;
 		position: relative;
 		font : 100%/100% Arial;
 		padding: 40px;
-		background: #FFFFFF;
-	}
-	p {
-		color : #230423;
-	}
-	::selection {
-		background: #FF5010;
-		color: #FFFFFF;
+		background: #FFFFFF;*/
 	}
 	img {
 		max-width: 100%;
 	}
-	img.suurennettava{
-		width: 30%;
-	}
-	img.suurennettava:hover{
-		width: 50%;
-	}
-	img.oikealeijuja{
-		width:30%; 
-		float:right; 
-		margin-left:10px;
-	}
+
 	/*lopussa oleva footer*/
 	footer {
-		color: #230423;
-		max-width: 1040px ;
-		margin-left: auto ;
-		margin-right: auto ;
-		position: relative;
-		font : 100%/100% Arial;
-		padding: 40px;
-		background: #FFFFFF;
 
-		/*border-bottom-right-radius:1em;*/
-		border-bottom-left-radius:1em;
-		opacity:0.6;
 	}
-	footer:hover{
-		opacity:1;
-	}
-	hr {
-		border: 0;
-		height: 1px;
-		background: #000;
-	}
+
 
 /*isoille näytöille väliltä 800px (puolikas fullHD on 960px) 
 |------------------|
@@ -160,82 +69,5 @@ jotain mitä ne eivät todellisuudessa ole. Vastaanota raivoni MS*/
 |----|
 */
 @media only screen and (max-width: 799px) and (min-width: 200px)  {
-	/*valikko pienennetty, 
-	nimi pienennetty, 
-	kuvat näkyvät pienempinä, 
-	reunoissa ei ole toppausta, 
-	marginia ja paddingia on vähennetty,
-	hoover on poistettu*/
-	body {
-		background: #FF5010;/*oranssi*/
-	}
-	::selection {
-		background: #1060A0;/*sininen*/
-		color: #FFFFFF;
-	}
-	div.nimi{
-		font : 460%/100% verdana;
-		opacity : 0.3;
-		font-weight: bold;
-		font-style:italic;
-		position: fixed;
-		float: right;
-		margin-top:-60px;
-		margin-left:-20px;
-		margin-right:-2000px;
-		display: block;
-	}
-	a.otsake{
-		font : 50px Arial;
-		color: #230423;
-		text-decoration:none;
-		font-weight: bold;
-		opacity:1;
-	}
-	div.ylapalkki{
-		font : 30px Arial;
-		text-align: left;
-		margin-top:47px;
-		
-		margin-right: -5px;
-		margin-left: -5px;
-		padding-right: 5px;
-		padding-left: 5px;
-		opacity:1.0;
-	}
-	li {
-		display:list-item;
-	}
-	article {
-		font : 20px Arial;
 
-		margin-top: -20px;
-		padding-top: 0px;
-		margin-bottom: -20px;
-		padding-bottom: 5px;
-
-		margin-right: -5px;
-		margin-left: -5px;
-		padding-right: 5px;
-		padding-left: 5px;
-	}
-	img.suurennettava{
-		width: 100%;
-	}
-	img.suurennettava:hover{
-		width: 100%;
-	}
-	img.oikealeijuja{
-		width: 100%;
-	}
-	footer {
-		padding-top: 20px;
-		padding-bottom: 5px;
-
-		margin-right: -5px;
-		margin-left: -5px;
-		padding-right: 5px;
-		padding-left: 5px;
-		opacity:1.0;
-	}
 }
