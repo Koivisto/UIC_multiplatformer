@@ -1,9 +1,8 @@
 
 <!DOCTYPE html>
 <head>
-<title>Aarne Leinonen - Portfolio</title>
-<link rel="shortcut icon" href="A.ico" />
-<meta name="author" content="Aarne Leinonen" />
+<title>Multiplattari Mobiili</title>
+<meta name="author" content="Aarne Leinonen, Mikko Honkanen" />
 <meta charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="mobiili.css" />
 <!--<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -16,26 +15,28 @@
 <script>
 	$(document).ready(function(){
 		$(".toquestionview").click(function{
-			$(".unconfirmed").is(".confirmed");
+			$( this ).hide();
+			//.parent().parent().hide();
+			//.removeClass(".unconfirmed").addClass(".confirmed")
 		});
 
 
-	  //$(".toquestionview").click(function(){
-	  	//$(".mainview").hide();
-	  	//$(".listview").show();
-	  	//$(".questionview").show();
-	  //});
-	  $(".normalbutton").click(function(){
-	  	//$(".questionview").show();
-	  	//$(".mainview").hide();
-	  	//$(".listview").hide());
-	  });
+		$(".toquestionview").click(function(){
+			$(".mainview").hide();
+			//$(".listview").show();
+			//$(".questionview").show();
+		});
+		$(".normalbutton").click(function(){
+			//$(".questionview").show();
+			//$(".mainview").hide();
+			//$(".listview").hide());
+		});
 	});
 </script>
 
 
 </head>
-<!--Ellen rakastaisi pienikokoisia sivuja, niin tässä olisi 100 rivin mittainen ASCI-graafinen rekryilmoitus-->
+
 <header>
 	<div id="nimi" class="nimi">lifelogging jeejee</div>
 </header>
