@@ -20,6 +20,31 @@ div.buttonsize{
 	display: inline-block;
 }
 
+div.mainview {
+	/*background-color: #500;*/
+}
+
+div.unconfirmed {
+	background-color: #500;
+}
+div.confirmed {
+	background-color: #050;
+}
+
+
+
+div.questionview {
+	background-color: #550;
+	display: none;
+}
+div.listview {
+	background-color: #005;
+	display: none;
+}
+
+
+
+
 /*normaaliversio, alustus*/
 	div.nimi{
 		font : 1000%/100% verdana;

@@ -12,6 +12,28 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".toquestionview").click(function{
+			$(".unconfirmed").is(".confirmed");
+		});
+
+
+	  //$(".toquestionview").click(function(){
+	  	//$(".mainview").hide();
+	  	//$(".listview").show();
+	  	//$(".questionview").show();
+	  //});
+	  $(".normalbutton").click(function(){
+	  	//$(".questionview").show();
+	  	//$(".mainview").hide();
+	  	//$(".listview").hide());
+	  });
+	});
+</script>
+
+
 </head>
 <!--Ellen rakastaisi pienikokoisia sivuja, niin tässä olisi 100 rivin mittainen ASCI-graafinen rekryilmoitus-->
 <header>
@@ -31,31 +53,31 @@
 			<h1>Päänäkymä</h1>
 			<div class="confirmed">ruokailu täffällä</div>
 
-			<div class="unconfirmed">Kävitkö kaupassa? buttoneita jne
+			<div class="unconfirmed">Kävitkö kaupassa?
 				<div class="confirmbuttons">
-						<div class="buttonsize"><button class="highlightbutton" value="">ok</button></div>
+						<div class="buttonsize"><button class="highlightbutton toquestionview" value="">ok</button></div>
 						<div class="buttonsize"><button class="normalbutton" value="">ei</button></div>
 				</div>
 			</div>
 
-			<div class="unconfirmed">Kävitkö lenkillä? 12.15-13.00?
+			<div class="unconfirmed">Kävitkö lenkillä?
 				<div class="confirmbuttons">
-						<div class="buttonsize"><button class="highlightbutton" value="">ok</button></div>
+						<div class="buttonsize"><button class="highlightbutton toquestionview" value="">ok</button></div>
 						<div class="buttonsize"><button class="normalbutton" value="">ei</button></div>
 				</div>
 			</div>
 
-			<div class="unconfirmed">Kävitkö lenkillä? 12.15-13.00?
+			<div class="unconfirmed">Kävitkö lenkillä?
 				<div class="confirmbuttons">
-						<div class="buttonsize"><button class="highlightbutton" value="">ok</button></div>
+						<div class="buttonsize"><button class="highlightbutton toquestionview" value="">ok</button></div>
 						<div class="buttonsize"><button class="normalbutton" value="">ei</button></div>
 				</div>
 			</div>
 
-			<div class="yesterday">nukuit 23-00</div>
-			<div class="yesterday">nukuit 23-00</div>
-			<div class="yesterday">nukuit 23-00</div>
-			<div class="yesterday">nukuit 23-00</div>
+			<div class="yesterday confirmed">nukuit 23-00</div>
+			<div class="yesterday confirmed">nukuit 23-00</div>
+			<div class="yesterday confirmed">nukuit 23-00</div>
+			<div class="yesterday confirmed">nukuit 23-00</div>
 
 		</div>
 
